@@ -27,6 +27,17 @@ import antuisifeed6 from "./project/IGAntuisi/Feed Bestari (3).png";
 import antuisifeed7 from "./project/IGAntuisi/Feed Bestari (4).png";
 import antuisifeed8 from "./project/IGAntuisi/Feed Bestari (5).png";
 import antuisifeed9 from "./project/IGAntuisi/Feed Bestari (6).png";
+import maganghubhero from "./Background/MagangHubBg.png";
+import antuisihero from "./Background/AntuisiBg.png";
+import greenleaffeeds1 from "./project/IGGreenleaf/Feeds Blue (1).png";
+import greenleaffeeds2 from "./project/IGGreenleaf/Feeds Blue (2).png";
+import greenleaffeeds3 from "./project/IGGreenleaf/Feeds Blue (3).png";
+import greenleaffeeds4 from "./project/IGGreenleaf/feeds krem (1).jpg";
+import greenleaffeeds5 from "./project/IGGreenleaf/feeds krem (2).jpg";
+import greenleaffeeds6 from "./project/IGGreenleaf/feeds krem (3).png";
+import greenleafstory1 from "./project/IGGreenleaf/Story White (1).jpg";
+import greenleafstory2 from "./project/IGGreenleaf/Story White (2).png";
+import greenleafstory3 from "./project/IGGreenleaf/Story White (3).png";
 
 export const Images = {
   FotoProfil,
@@ -57,5 +68,16 @@ export const Images = {
   antuisifeed6,
   antuisifeed7,
   antuisifeed8,
-  antuisifeed9
+  antuisifeed9,
+  maganghubhero,
+  antuisihero,
+  greenleaffeeds1,
+  greenleaffeeds2,
+  greenleaffeeds3,
+  greenleaffeeds4,
+  greenleaffeeds5,
+  greenleaffeeds6,
+  greenleafstory1,
+  greenleafstory2,
+  greenleafstory3,
 };
