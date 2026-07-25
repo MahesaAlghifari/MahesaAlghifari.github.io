@@ -10,19 +10,19 @@ import type { Project, ProjectCategory } from "../data/projects";
 import ProjectCard from "../components/projects/ProjectCard";
 import ProjectModal from "../components/projects/ProjectModal";
 
-const TABS = ["UI/UX", "Social Media", "Media Print", "Other"] as const;
+const TABS = ["Social Media", "UI/UX", "Media Print", "Other"] as const;
 type Tab = typeof TABS[number];
 
 export default function ProjectsSection({ lang }: { lang: Lang }) {
   const t = TRANSLATIONS[lang];
   
   // Local state
-  const [activeTab, setActiveTab] = useState<Tab>("UI/UX");
+  const [activeTab, setActiveTab] = useState<Tab>("Social Media");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   // Filter logic
   const catKey: Record<Tab, ProjectCategory> = { 
-    "UI/UX": "uiux", "Social Media": "social", "Media Print": "print", "Other": "other" 
+     "Social Media": "social", "UI/UX": "uiux", "Media Print": "print", "Other": "other" 
   };
   const filtered = projects.filter((p) => p.category === catKey[activeTab]);
 

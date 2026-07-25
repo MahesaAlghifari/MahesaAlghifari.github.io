@@ -178,7 +178,7 @@ function SocialGallery({ p }: { p: Project }) {
       <div style={{ padding: "0 clamp(16px,5vw,60px) 60px" }}>
         <p style={{ fontSize: 14, lineHeight: 1.8, color: C.textMuted, marginBottom: 28 }}>{p.description}</p>
         {p.gallery && (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14 }}>
             {p.gallery.map((item, i) => (
               <div key={i} onClick={() => setSelectedImg(item.img)} style={{ cursor: "pointer", breakInside: "avoid", borderRadius: 14, overflow: "hidden", border: `1px solid ${C.border}`, position: "relative" }}>
                 <img src={item.img} style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: item.aspect || "1/1", transition: "0.3s" }} />

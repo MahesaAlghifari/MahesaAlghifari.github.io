@@ -1,7 +1,7 @@
 // src/config/translations.ts
 
 export type Lang = "EN" | "ID";
-export type ProjectCategory = "uiux" | "social" | "print" | "other";
+export type ProjectCategory = "social" | "uiux" | "print" | "other";
 
 export const TRANSLATIONS = {
   EN: {
@@ -23,7 +23,7 @@ export const TRANSLATIONS = {
     experience: { tag: "// EXPERIENCE", h1: "Missions ", hAccent: "completed", prev: "Prev", next: "Next", of: "of" },
     projects: {
       tag: "// SELECTED_PROJECTS", h1: "Work from the ", hAccent: "cosmos",
-      tabs: ["UI/UX", "Social Media", "Media Print", "Other"] as string[],
+      tabs: ["Social Media", "UI/UX", "Media Print", "Other"] as string[],
       viewCaseStudy: "View Case Study",
       caseStudyTabs: ["Research", "User Flow", "Wireframes", "Hi-Fi", "Testing"] as string[],
       catLabels: { uiux: "Case Study", social: "Social Media", print: "Print Design", other: "Visual Design" } as Record<ProjectCategory, string>,
@@ -65,10 +65,10 @@ export const TRANSLATIONS = {
     experience: { tag: "// PENGALAMAN", h1: "Misi yang ", hAccent: "diselesaikan", prev: "Sebelum", next: "Berikut", of: "dari" },
     projects: {
       tag: "// PROYEK_PILIHAN", h1: "Karya dari ", hAccent: "kosmos",
-      tabs: ["UI/UX", "Media Sosial", "Media Cetak", "Lainnya"] as string[],
+      tabs: ["Social Media", "UI/UX", "Media Cetak", "Lainnya"] as string[],
       viewCaseStudy: "Lihat Studi Kasus",
       caseStudyTabs: ["Riset", "Alur Pengguna", "Wireframe", "Hi-Fi", "Pengujian"] as string[],
-      catLabels: { uiux: "Studi Kasus", social: "Media Sosial", print: "Desain Cetak", other: "Desain Visual" } as Record<ProjectCategory, string>,
+      catLabels: { social: "Media Sosial", uiux: "Studi Kasus", print: "Desain Cetak", other: "Desain Visual" } as Record<ProjectCategory, string>,
     },
     skills: {
       tag: "// ALAT_&_KEAHLIAN", h1: "Konstelasi desain ", hAccent: "saya",
