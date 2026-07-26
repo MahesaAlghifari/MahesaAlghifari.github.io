@@ -31,8 +31,8 @@ export default function AboutSection({ lang }: { lang: Lang }) {
       </div>
 
       {[
-        { label: t.about.stat1, value: "40+", accent: C.cyan, pos: { top: "8%", left: "-6%" } },
-        { label: t.about.stat2, value: "25+", accent: C.purple, pos: { bottom: "8%", right: "-6%" } },
+        { label: t.about.stat1, value: "10+", accent: C.cyan, pos: { top: "8%", left: "-6%" } },
+        { label: t.about.stat2, value: "10+", accent: C.purple, pos: { bottom: "8%", right: "-6%" } },
       ].map(({ label, value, accent, pos }) => (
         <div key={label} className="hidden md:block" style={{ position: "absolute", ...pos, padding: "12px 18px", borderRadius: 16, background: "rgba(8,8,28,0.85)", border: `1px solid ${accent}40`, backdropFilter: "blur(12px)", boxShadow: `0 8px 32px rgba(0,0,0,0.5)` }}>
           <div style={{ fontSize: 9, color: C.textFaint, fontFamily: "'Space Mono', monospace", letterSpacing: "0.1em", marginBottom: 2 }}>{label.toUpperCase()}</div>
