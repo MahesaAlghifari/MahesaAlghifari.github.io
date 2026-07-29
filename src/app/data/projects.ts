@@ -448,32 +448,67 @@ export const projects: Project[] = [
   //   ],
   // },
 
-  // {
-  //   id: 6, title: "Greenleaf Brand Identity", year: "2023", category: "print",
-  //   accent: "#00ff88", role: "Graphic Designer",
-  //   description: "Complete brand identity package for a sustainable packaging company including logo system, stationery, and packaging templates.",
-  //   tags: ["Brand Identity", "Packaging", "Illustrator", "Print"],
-  //   mockupBg: "linear-gradient(135deg, #001a0c 0%, #002a14 100%)",
-  //   heroImage: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=1200&q=80",
-  //   detailImages: ["https://images.unsplash.com/photo-1547949003-9792a18a2601?w=800&q=80", "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=800&q=80"],
-  //   challenge: "Brand needed to communicate eco-credentials authentically while remaining commercially competitive in retail shelf presence.",
-  //   solution: "Developed a logo system, typography scale, and earthy-premium color palette applied across product packaging and collateral.",
-  //   impact: "Brand launched to 5 retail chains; packaging redesign attributed to 25% sales increase per client report.",
-  //   printAssets: [
-  //     { name: "Logo System (Primary, Secondary, Icon)", size: "A4 / Vector", img: "https://images.unsplash.com/photo-1503455637927-730bce8583c0?w=400&q=80" },
-  //     { name: "Business Card Set", size: "90×55mm", img: "https://images.unsplash.com/photo-1589561253831-b8421dd58261?w=400&q=80" },
-  //     { name: "Product Packaging Template", size: "Custom die-cut", img: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&q=80" },
-  //     { name: "Brand Guidelines Book", size: "A5 / 32pp", img: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=400&q=80" },
-  //   ],
-  //   gallery: [
-  //     { label: "Banner", img: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&q=80", aspect: "16/9" },
-  //     { label: "Packaging", img: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=600&q=80", aspect: "3/4" },
-  //     { label: "Business Card", img: "https://images.unsplash.com/photo-1589561253831-b8421dd58261?w=600&q=80", aspect: "3/2" },
-  //     { label: "Brand Guideline", img: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=600&q=80", aspect: "4/3" },
-  //     { label: "Logo System", img: "https://images.unsplash.com/photo-1503455637927-730bce8583c0?w=600&q=80", aspect: "4/3" },
-  //     { label: "Brochure", img: "https://images.unsplash.com/photo-1547949003-9792a18a2601?w=600&q=80", aspect: "3/4" },
-  //   ],
-  // },
+  {
+    id: 7,
+    title: "Maganghub",
+    year: "2026",
+    category: "print", // Atau "other", sesuaikan dengan logic filtermu
+    accent: "#0055ff",
+    role: "Graphic Designer",
+    description: "Various digital & print campaign materials including Videotron billboard setups and YouTube thumbnail concepts.",
+    tags: ["Videotron", "YouTube", "Photoshop", "Campaign"],
+    mockupBg: "linear-gradient(135deg, #001a40 0%, #002a60 100%)",
+    heroImage: "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1200&q=80",
+    challenge: "Maintaining brand consistency across massive outdoor displays and small digital screens.",
+    solution: "Created adaptable core assets that scale effectively while retaining visual impact in different environments.",
+    impact: "Successfully deployed across 5 major city junctions and resulted in 20% higher CTR on YouTube.",
+    gallery: [
+      // --- SET 1: VIDEOTRON ---
+  {
+        label: "Videotron",
+        img: Images.printmockmaganghub1,
+        aspect: "16/9" // Gambar ini akan sama dengan card dan memanjang penuh 2 kolom
+      },
+
+      // --- SET 3: ZOOM THUMBNAIL ---
+      {
+        label: "Umbul umbul",
+        img: Images.mockupumbul,
+        aspect: "16/9" // (Index 3) Karena kelipatan 3, otomatis jadi full-width lagi (2 kolom)
+      },
+
+
+      // --- SET 2: YOUTUBE THUMBNAIL ---
+      {
+        label: "YouTube Thumbnail",
+        img: Images.mockupthumbnailYoutube,
+        aspect: "16/9" // (Index 3) Karena kelipatan 3, otomatis jadi full-width lagi (2 kolom)
+      },
+    
+
+      // --- SET 3: ZOOM THUMBNAIL ---
+      {
+        label: "Virtual Background - Zoom",
+        img: Images.mockupthumbnailZoom2,
+        aspect: "16/9" // (Index 3) Karena kelipatan 3, otomatis jadi full-width lagi (2 kolom)
+      },
+      {
+        label: "Backdrop",
+        img: Images.mockupbackdrop,
+        aspect: "14/9" // (Index 3) Karena kelipatan 3, otomatis jadi full-width lagi (2 kolom)
+      },
+      // --- SET 4: CUE CARD ---
+      {
+        label: "Cue Card",
+        img: Images.mockupcuecard,
+        aspect: "16/9" // (Index 4) Karena kelipatan 3, otomatis jadi full-width lagi (2 kolom)
+      },
+
+
+ 
+    ],
+    detailImages: []
+  }
   // {
   //   id: 7, title: "Sunbiro Event Collateral", year: "2023", category: "print",
   //   accent: "#ffb347", role: "Graphic Designer",

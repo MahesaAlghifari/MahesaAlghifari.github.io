@@ -197,15 +197,28 @@ function SocialGallery({ p }: { p: Project }) {
 
 function PrintGallery({ p }: { p: Project }) {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
+
   return (
     <>
       <div style={{ padding: "0 clamp(16px,5vw,60px) 60px" }}>
-        <p style={{ fontSize: 14, lineHeight: 1.8, color: C.textMuted, marginBottom: 28 }}>{p.description}</p>
+        <p style={{ fontSize: 14, lineHeight: 1.8, color: C.textMuted, marginBottom: 32 }}>{p.description}</p>
+        
         {p.gallery && (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
             {p.gallery.map((item, i) => (
-              <div key={i} onClick={() => setSelectedImg(item.img)} style={{ cursor: "pointer", borderRadius: 14, overflow: "hidden", border: `1px solid ${C.border}`, position: "relative" }}>
-                <img src={item.img} style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: item.aspect || "4/3" }} />
+              <div 
+                key={i} 
+                onClick={() => setSelectedImg(item.img)} 
+                style={{ 
+                  cursor: "pointer", 
+                  borderRadius: 14, 
+                  overflow: "hidden", 
+                  border: `1px solid ${C.border}`, 
+                  position: "relative"
+                }}
+              >
+                {/* Semua gambar otomatis main/full-width (100%) */}
+                <img src={item.img} style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: item.aspect || "16/9" }} />
                 <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "20px 12px 10px", background: "linear-gradient(to bottom, transparent, rgba(4,4,15,0.85))" }}>
                   <span style={{ fontSize: 10, color: "#fff", fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600 }}>{item.label}</span>
                 </div>
@@ -298,7 +311,7 @@ export default function ProjectModal({ project, onClose, onNext, onPrev, lang }:
           </div>
         </div>
 
-        {/* Hero - CSS class added for responsive height */}
+        {/* Hero */}
         <div className="modal-hero-image" style={{ position: "relative", overflow: "hidden", flexShrink: 0 }}>
           <img src={project.heroImage} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(4,4,15,0.25), rgba(4,4,15,0.88))" }} />

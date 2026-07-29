@@ -35,7 +35,7 @@ export default function Footer({ lang }: { lang: Lang }) {
             <div style={{ width: 4, height: 4, borderRadius: "50%", background: C.borderCyan, display: "inline-block" }} className="separator-dot" />
 
             <div style={{ display: "flex", gap: "clamp(12px, 3vw, 24px)" }}>
-              {["Dribbble", "LinkedIn", "Instagram"].map((s) => (
+              {["LinkedIn"].map((s) => (
                 <a key={s} href="#" className="footer-link">
                   {s}
                 </a>

@@ -38,6 +38,19 @@ import greenleaffeeds6 from "./project/IGGreenleaf/feeds krem (3).png";
 import greenleafstory1 from "./project/IGGreenleaf/Story White (1).jpg";
 import greenleafstory2 from "./project/IGGreenleaf/Story White (2).png";
 import greenleafstory3 from "./project/IGGreenleaf/Story White (3).png";
+import printmaganghub1 from "./project/PrintMagangHubBatch3/PrintMagangHubVideoTron (1).png";
+import printmaganghub2 from "./project/PrintMagangHubBatch3/PrintMagangHubVideoTron (2).png";
+import printmockmaganghub1 from "./project/PrintMagangHubBatch3/Mockup PrintMagangHubVideoTron (1).png";
+import printmockmaganghub2 from "./project/PrintMagangHubBatch3/Mockup PrintMagangHubVideoTron (2).png";
+import thumbnailYoutube1 from "./project/PrintMagangHubBatch3/Thumbnail Youtube.png";
+import thumbnailYoutube2 from "./project/PrintMagangHubBatch3/Thumbnail Youtube2.png";
+import mockupthumbnailYoutube from "./project/PrintMagangHubBatch3/Mokcup Thumbnail Youtube.png";
+import thumbnailZoom1 from "./project/PrintMagangHubBatch3/Thumbnail Zoom.png";
+import thumbnailZoom2 from "./project/PrintMagangHubBatch3/Thumbnail Zoom2.png";
+import mockupthumbnailZoom2 from "./project/PrintMagangHubBatch3/Mokcup Thumbnail Zoom.png";
+import mockupumbul from "./project/PrintMagangHubBatch3/Mokcup Umbul.png";
+import mockupbackdrop from "./project/PrintMagangHubBatch3/backdrop.png";
+import mockupcuecard from "./project/PrintMagangHubBatch3/CueCard.png";
 
 export const Images = {
   FotoProfil,
@@ -80,4 +93,17 @@ export const Images = {
   greenleafstory1,
   greenleafstory2,
   greenleafstory3,
+  printmaganghub1,
+  printmaganghub2,
+  printmockmaganghub1,
+  printmockmaganghub2,
+  thumbnailYoutube1,
+  thumbnailYoutube2,
+  mockupthumbnailYoutube,
+  thumbnailZoom1,
+  thumbnailZoom2,
+  mockupthumbnailZoom2,
+  mockupumbul,
+  mockupbackdrop,
+  mockupcuecard
 };

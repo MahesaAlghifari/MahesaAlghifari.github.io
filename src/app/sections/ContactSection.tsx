@@ -10,7 +10,7 @@ export default function ContactSection({ lang }: { lang: Lang }) {
 
   return (
     <section id="contact" style={{ padding: "clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px)" }}>
-      <div style={{ maxWidth: 900, width: "100%", margin: "0 auto", textAlign: "center" }}>
+      <div style={{ maxWidth: 1000, width: "100%", margin: "0 auto", textAlign: "center" }}>
         
         {/* Header Text */}
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
@@ -40,7 +40,7 @@ export default function ContactSection({ lang }: { lang: Lang }) {
           style={{ 
             display: "grid", 
             // Otomatis menyesuaikan: 3 kolom di Desktop, 2/1 kolom di Tablet, 1 kolom di HP
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 250px), 1fr))", 
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", 
             gap: "clamp(16px, 3vw, 24px)",
             textAlign: "left"
           }}
